@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Movies to Watch</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 980px)">
+    <link rel="stylesheet" href="./src/notie-master/dist/notie.min.css">
+</head>
+    <body>
+        <header>
+            
+            <h2><i class="bi bi-film"></i>MoviesWatch</h2>
+            
+                <section id="search-container">
+                    <div class="movie-name-wrapper">
+                        <label for="movie-name">Name:</label>
+                        <input type="text" id="movie-name" placeholder="type movie name">
+                    </div>
+                    <div class="movie-year-wrapper">
+                        <label for="movie-year">Year:</label>
+                        <input type="text" id="movie-year" placeholder="movie year">
+                    </div>                
+                    <button id="search-button"><i class="bi bi-search"></i></button>
+                </section>
+        </header>
+
+        <main>
+            <h2>Make Your Movie List Right Now!</h2>
+            <section id="movie-list">
+               
+            </section>
+            <article id="modal-overlay" class="overlay">
+                <section id="modal-background"></section>
+                <section id="modal-container"></section>
+            </article>
+        </main> 
+        <script src="./script.js"></script>
+        <script src="./modal.js"></script> 
+        <script src="./key.js"></script> 
+        <script src="./src/notie-master/dist/notie.js"></script>     
+    </body>
+</html>
+
+<!-- <i class="bi bi-film"></i> -->
